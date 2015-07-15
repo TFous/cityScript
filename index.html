@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title></title>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<!--<script type="text/javascript" src="js/cityScript.js"></script>-->
+	<script type="text/javascript" src="js/cityScript.js"></script>
+	<link rel="stylesheet" href="css/cityStyle.css"/>
+	<style type="text/css">
+		body {
+			padding: 100px;
+		}
+	</style>
+
+</head>
+<body>
+<input value="请选择所在地区" id="dd" type="text" style="width:200px;height: 20px;line-height: 20px;padding:4px 6px;color:#666;font-size: 12px;">
+	<!--<div class="city-box">-->
+		<!--<div class="city-close">X</div>-->
+		<!--<ul class="city-ul">-->
+			<!--<li class="city-on">-->
+				<!--<em class="province">请选择</em>-->
+			<!--</li>-->
+			<!--<li>-->
+				<!--<em class="city">请选择</em>-->
+			<!--</li>-->
+			<!--<li>-->
+				<!--<em class="county">请选择</em>-->
+			<!--</li>-->
+		<!--</ul>-->
+		<!--<div class="baseAddress-box">-->
+			<!--<ul class="baseprovince">-->
+			<!--</ul>-->
+			<!--<ul class="basecity">-->
+
+			<!--</ul>-->
+			<!--<ul class="basecounty">-->
+
+			<!--</ul>-->
+		<!--</div>-->
+	<!--</div>-->
+<script>
+//	$("#inputTest").cityScript();
+cityScript({
+	id:"dd"
+});
+</script>
+
+
+</body>
+
+</html>

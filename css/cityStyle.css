@@ -1,0 +1,146 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    color: #333;
+    font-family: Microsoft YaHei, tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    background: #fff;
+    line-height: 24px;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+em {
+    font-style: normal;
+}
+
+input, button, select, textarea {
+    outline: none;
+}
+
+textarea {
+    resize: none; /*禁用了文本的拖拉，尤其在谷歌下*/
+}
+
+
+
+
+
+.city-box {
+    position: absolute;
+    z-index: 9999;
+    background: #fff;
+    border: 2px solid #c9cbce;
+    width: 420px;
+    padding: 15px;
+    display: none;
+}
+
+.city-close{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background:red;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    color:#fff;
+}
+.city-box:before, .city-box:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    left: 20px;
+    z-index: 9998;
+}
+
+
+.city-box:before {
+    border-color: transparent transparent #ffffff;
+    top: -17px;
+    z-index: 10001;
+}
+
+.city-box:after {
+    border-color: transparent transparent #c8c8c8;
+    top: -20px;
+}
+.city-ul{
+    /*overflow: hidden;*/
+    height:26px;
+    width: 100%;
+    border-bottom:1px solid #dbdbdb;
+}
+.city-ul li{
+    float: left;
+    padding:0px 10px;
+    font-size: 15px;
+    color: #333;
+    margin-left:12px;
+    cursor: pointer;
+
+}
+
+.city-on{
+    border: 1px solid #dbdbdb;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    top: 1px;
+    z-index: 1;
+}
+.baseAddress-box ul{
+    overflow: hidden;
+    display: none;
+}
+
+.baseAddress-box ul:first-child{
+    display: block;
+}
+.baseAddress-box ul li{
+    float: left;
+    margin:9px 0px 0px 12px;
+    padding:0px 12px;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+    width:42px;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.city,.county{
+    display: none;
+}
+
+#inputTest{
+    width:200px;
+    height: 20px;
+    line-height: 20px;
+    padding:4px 6px;
+    color:#666;
+    font-size: 12px;
+}
+/*.city-on em{*/
+    /*display: block;*/
+/*}*/
